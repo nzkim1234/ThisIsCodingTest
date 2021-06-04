@@ -10,6 +10,9 @@ for i in range(n):
         count = 0
 print(result)
 
+
+'''
+모범 답안:
 n = int(input())
 data = list(map(int, input().split()))
 data.sort()
@@ -21,8 +24,5 @@ for i in data:
         result += 1
         count = 0
 print(result)
-
-'''
-모범 답안:
 
 '''
