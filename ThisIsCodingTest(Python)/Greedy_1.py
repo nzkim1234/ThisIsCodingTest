@@ -11,6 +11,7 @@ print(count)
 
 '''
 모범 답안:
+
 n, k = map(int, input().split())
 result = 0
 while True:

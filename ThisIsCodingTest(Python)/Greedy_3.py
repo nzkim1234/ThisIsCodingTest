@@ -13,6 +13,7 @@ print(result)
 
 '''
 모범 답안:
+
 n = int(input())
 data = list(map(int, input().split()))
 data.sort()

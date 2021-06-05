@@ -11,6 +11,7 @@ print(result)
 
 '''
 모범 답안:
+
 data = input()
 result = int(data[0])
 for i in range(1,len(data)):
