@@ -19,3 +19,4 @@ for i in range(location[len(location)-1]+1):
             pipe[i+j] = 0
         count += 1
 print(count)
+ 
