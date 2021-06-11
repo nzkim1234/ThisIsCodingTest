@@ -20,7 +20,7 @@ def bfs(v):
             for i in graph[x]:
                 if c2[i] == 0:
                     queue.append(i)
- 
+
 
 n, m, v = map(int, input().split(' '))
 graph = [[0] for _ in range(n+1)]

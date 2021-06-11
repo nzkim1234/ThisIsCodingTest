@@ -13,7 +13,7 @@ def bfs(v):
         if check != 1:
             check[x] = 1
             for i in graph[x]:
-                if check[i] != 1: 
+                if check[i] != 1:
                     queue.append(i)
 
 
