@@ -24,7 +24,7 @@ def bfs(x, y):
                 queue.append([nx+1, ny])
                 queue.append([nx-1, ny])
                 queue.append([nx, ny+1])
-                queue.append([nx, ny-1])
+                queue.append([nx, ny-1]) 
 
 
 t = int(input())
