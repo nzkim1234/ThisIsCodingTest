@@ -17,12 +17,11 @@ def dfs(i, j):
             dfs(i-1, j-1)
 
 
-'''
 def bfs(i, j):
     queue = []
     queue.append((i, j))
     while queue:
-        x, y = queue.pop()
+        x, y = queue.pop(0)
         if x >= 0 and x < h and y >= 0 and y < w:
             if graph[x][y] == 1:
                 graph[x][y] = 0
@@ -34,8 +33,6 @@ def bfs(i, j):
                 queue.append((x-1, y-1))
                 queue.append((x, y+1))
                 queue.append((x, y-1))
-
-'''
 
 
 while True:

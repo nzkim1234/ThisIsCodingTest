@@ -9,7 +9,7 @@ def bfs(v):
     queue = []
     queue.append(v)
     while queue:
-        x = queue.pop()
+        x = queue.pop(0)
         if check != 1:
             check[x] = 1
             for i in graph[x]:

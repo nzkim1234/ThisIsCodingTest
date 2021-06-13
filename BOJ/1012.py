@@ -17,7 +17,7 @@ def bfs(x, y):
     queue = []
     queue.append([x, y])
     while queue:
-        nx, ny = queue.pop()
+        nx, ny = queue.pop(0)
         if nx >= 0 and nx < m and ny >= 0 and ny < n:
             if graph[nx][ny] == 1:
                 graph[nx][ny] = 0
