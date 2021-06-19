@@ -1,4 +1,4 @@
-n,c = map(int,input().split())
+n, c = map(int, input().split())
 house = []
 for _ in range(n):
     x = int(input())
@@ -14,12 +14,11 @@ while (start <= end):
     count = 1
     for i in range(1, len(house)):
         if house[i] >= old+mid:
-            count+=1
+            count += 1
             old = house[i]
-    if count >=c:
+    if count >= c:
         start = mid + 1
         result = mid
     else:
         end = mid - 1
-
 print(result)
