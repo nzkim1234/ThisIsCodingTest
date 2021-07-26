@@ -17,7 +17,7 @@ def dijkstra(start):
                 heapq.heappush(q, (cost, i[0]))
 
 
-n, m, start = map(int, input().split())
+n, m1, start = map(int, input().split())
 graph = [[] for i in range(n+1)]
 distance = [INF] * (n+1)
 for _ in range(m):
