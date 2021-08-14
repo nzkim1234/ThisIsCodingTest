@@ -1,7 +1,6 @@
 n = int(input())
-start = 1
-count = 1
-while n > start:
-    count += 1
-    start += 6*count
-print(count)
+c = 1
+while n > 1:
+    n -=(6*c)
+    c+=1
+print(c)
