@@ -3,7 +3,7 @@ for _ in range(t):
     n, m = map(int, input().split())
     l = list(map(int, input().split()))
     priority = []
-    for i in range(n): # 중요도, 순선을 저장
+    for i in range(n): # 중요도, 순서을 저장
         priority.append([l[i],i])
     c = 0
     while True:
