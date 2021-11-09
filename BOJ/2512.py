@@ -7,7 +7,7 @@ else:
     # 이분 탐색
     s = 1
     e = m
-    while s < e:
+    while s <= e:
         total_price = 0
         mid = (s+e) // 2
         for i in money: 
@@ -19,13 +19,4 @@ else:
             e = mid - 1
         else: # total price 가 m보다 작을 시 s 값 늘이기
             s = mid + 1
-    # 실수 -> 정수 변환중 반올림 때문에 값이 달라질수 있으므로 한번더 total price를 구하기
-    total_price = 0
-    for i in money: 
-        if i > e: # i 가 e(최대 예산) 값 보다 클시 e(최대 예산) 을 total price에 더하기
-            total_price += e
-        else: # 아닐시 i의 값을 total price에 더하기
-            total_price += i
-    if total_price > m: # total price가 m 보다 클시 e - 1
-        e -= 1
     print(e)
