@@ -7,7 +7,7 @@ position = []
 # 입력 받은 값에 따른 좌표를 position에 추가
 for _ in range(n + 1):
     direction, distance = map(int, stdin.readline().split())
-    
+
     if direction == 1:
         position.append([0, distance])
     elif direction == 2:
@@ -30,4 +30,5 @@ for p_x, p_y in position:
         result += y + min(p_x + my_position_x, x * 2 - my_position_x - p_x)  # y + 반시계 또는 시계 방향으로 돌았을 때 최솟값
     else:
         result += abs(calc_distance_x) + abs(calc_distance_y)  
+
 print(result)

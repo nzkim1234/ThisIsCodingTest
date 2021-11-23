@@ -10,7 +10,7 @@ if n < 2:  # 계단의 수가 1개 이하면 그 계단의 값을 출력
 else:
     # dp[0], dp[1]은 최초값
     dp[0] = [[stairs[0], 1]]
-    dp[1] = [[stairs[0]+ stairs[1], 2], [stairs[1],1]]
+    dp[1] = [[stairs[0]+ stairs[1], 2], [stairs[1], 1]]
 
     # 2번째 계단부터 n번째 계단까지 각 계단별 최댓값 구하기
     for i in range(2, n):
