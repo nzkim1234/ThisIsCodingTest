@@ -7,6 +7,7 @@ position = []
 # 입력 받은 값에 따른 좌표를 position에 추가
 for _ in range(n + 1):
     direction, distance = map(int, stdin.readline().split())
+    
     if direction == 1:
         position.append([0, distance])
     elif direction == 2:
