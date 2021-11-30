@@ -23,13 +23,16 @@ for i in range(n):
             while queue:
                 count += 1
                 x, y = queue.pop()
+
                 for p_x, p_y in position:
                     n_x = x + p_x
                     n_y = y + p_y
+                    
                     if 0 <= n_x < n and 0 <= n_y < n:
                         if graph[n_x][n_y] == '1':
                             queue.append([n_x, n_y])
                             graph[n_x][n_y] = '0'
+
             result_list.append(count)
 
 result_list.sort()

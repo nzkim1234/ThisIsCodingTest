@@ -30,7 +30,7 @@ while True:
             n_y = y + p_y
 
             if 0 <= n_x < n and 0 <= n_y < n and not visit_graph[n_x][n_y]:
-                if 0 < graph[n_x][n_y] < shark_size:  # 먹을 수 있는 크기의 물고기면 
+                if 0 < graph[n_x][n_y] < shark_size:  # 먹을 수 있는 크기의 물고기면
                     eatable_fish.append([n_x, n_y, distance])  # 좌표값과 움직인 거리를 eatable_fish에 저장
                 elif graph[n_x][n_y] == 0 or graph[n_x][n_y] == shark_size:  # 칸이 비어있거나, 칸의 물고기 크기가 상어의 크기와 같다면
                     queue.append([n_x, n_y, distance + 1])  # 큐에 좌표값과 움직인 거리를 저장
@@ -39,7 +39,7 @@ while True:
     if not eatable_fish:  # eatable_fish가 비어있으면 종료
         break
     else:
-        eatable_fish.sort(key = lambda x : (x[2], x[0], x[1]))  # 리스트를 움직인 거리, x좌표, y좌표 순으로 정렬 
+        eatable_fish.sort(key = lambda x : (x[2], x[0], x[1]))  # 리스트를 움직인 거리, x좌표, y좌표 순으로 정렬
         graph[shark_loc[0]][shark_loc[1]] = 0  # 기존 상어의 위치를 빈칸으로 바꾸기
         shark_loc = [eatable_fish[0][0], eatable_fish[0][1]]  # 물고기를 먹은 위치를 새로운 상어 위치로 저장
         graph[shark_loc[0]][shark_loc[1]] = 9  # 바뀐 상어의 위치를 9(상어)로 바꾸기

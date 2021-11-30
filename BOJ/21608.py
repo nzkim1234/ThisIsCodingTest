@@ -27,6 +27,7 @@ for s, l1, l2, l3, l4 in student:
                             count_like_student += 1
                         elif graph[n_x][n_y] == 0:  # 인접한 칸에 빈칸의 수를 구한다.
                             count_black_space += 1
+
                 # 인접한 칸에 좋아하는 학생이 더 많다 or 인접하는 칸에 좋아하는 학생의 수는 같지만 빈칸이 더 많을 때
                 if student_space[2] < count_like_student or (student_space[2] <= count_like_student and count_black_space > student_space[3]):
                     student_space = [i, j, count_like_student, count_black_space]  # [x좌표, y좌표, 인접한 칸에 좋아하는 학생의 수, 인접한 칸에 빈칸] 저장
@@ -45,14 +46,17 @@ for x in range(n):
             if l[0] == graph[x][y]:
                 student_list = l[1::]
                 break
+
         count = 0
 
         for p_x, p_y in position:
             n_x = x + p_x
             n_y = y + p_y
+
             if 0 <= n_x < n and 0 <= n_y < n:
                 if graph[n_x][n_y] in student_list:
                     count += 1
+                    
         if count != 0:
             result += 10 ** (count - 1)
             
