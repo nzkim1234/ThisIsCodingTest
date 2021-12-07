@@ -48,5 +48,6 @@ for move in movement:
     
 king = chr(king_loc[1] + 65) + str(king_loc[0] + 1)  # 숫자를 문자로 변환
 stone = chr(stone_loc[1] + 65) + str(stone_loc[0] + 1)  # 숫자를 문자로 변환
+
 print(king)
 print(stone)
