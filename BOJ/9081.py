@@ -31,3 +31,4 @@ for i in range(n):
         result = "".join(word[:change_index_one + 1]) + "".join(list(reversed(word[change_index_one + 1::])))  # change_index_one 뒤에오는 값들은 반전시켜서 합친다
 
     print(result)
+    

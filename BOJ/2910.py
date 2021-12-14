@@ -21,5 +21,4 @@ for i in range(len(num)):
 num_and_count.sort(reverse = True, key = lambda x : x[1])  # 자주나온 순서로 정렬하기
 
 for result_num, result_count in num_and_count:
-    for i in range(result_count):
-        print(result_num, end = ' ')
+    print((str(result_num) +' ') * result_count, end = '')

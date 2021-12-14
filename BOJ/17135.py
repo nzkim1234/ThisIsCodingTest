@@ -25,8 +25,10 @@ for i in archer_locations:
                 for find_enemy_y in range(m):
                     if find_enemy_x >= 0 and new_graph[find_enemy_x][find_enemy_y] == '1':
                             distance = abs(len_new_graph - find_enemy_x) + abs(find_enemy_y - archer_loc)
+                            
                             if distance <= d:  #적으로부터 거리가 d 이하라면 remove_loc에 저장
                                 remove_loc.append([find_enemy_x, find_enemy_y, distance])
+
             if remove_loc:
                 remove_loc.sort(key = lambda x : (x[2], x[1]))  # 적을 거리, 위치(가장 왼쪽 왼쪽) 순으로 정렬
                 total_remove_loc.append(remove_loc[0])  # 이 궁수가 제거할 적의 위치(remove_loc[0])을 total_remove_loc에 저장
