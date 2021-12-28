@@ -17,7 +17,6 @@ for _ in range(n):
 
     # 0이 아닐 경우
     else:
-
         # a의 인덱스 1부터 끝까지 저장
         for i in a[1::]:
             presents.append(i)

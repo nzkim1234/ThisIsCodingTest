@@ -14,11 +14,9 @@ words = []
 # 알파벳의 자릿수의 값 만큼 알파벳에 해당하는 딕셔너리값 증가
 for i in range(n):
     word = list(stdin.readline().strip())
-    
+
     for i in range(len(word)):
         alpha[word[i]] += 10 ** (len(word) - i - 1)
-    
-    words.append(word)
 
 list_alpha = []
 

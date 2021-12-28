@@ -55,16 +55,13 @@ for i in range(n):
             if not do_know[j]:
                 queue.append(j)
                 do_know[j] = True
-
-candidate_count = 0
+                
 candidate = []
-
 
 for i in range(n):
     # result[i]의 값이 result의 최솟값과 같을경우
     if result[i] == min(result):
         candidate.append(i + 1)
-        candidate_count += 1
 
-print(min(result), candidate_count)
+print(min(result), len(candidate))
 print(*candidate)

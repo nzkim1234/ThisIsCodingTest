@@ -18,7 +18,6 @@ for _ in range(n):
 
     # 0이 아닐 경우
     else:
-
         # a의 인덱스 1부터 끝까지 힙에 저장, (heap은 최소힙이므로 -(음수)로 바꾸어서 저장)
         for i in a[1::]:
             heapq.heappush(presents, -i)

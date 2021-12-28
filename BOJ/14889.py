@@ -6,7 +6,7 @@ graph = []
 
 for _ in range(n):
     graph.append(list(map(int, stdin.readline().split())))
-
+    
 teams = list(combinations([i for i in range(n)], n//2))  # 나올 수 있는 모든 조합 찾기
 start_team = teams[0:len(teams)//2]  # 조합의 앞에서부터 절반 저장
 link_team = list(reversed(teams[len(teams)//2 ::]))  # 조합의 뒤에서부터 절반을 뒤집어서 저장
